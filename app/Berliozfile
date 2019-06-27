@@ -5,9 +5,5 @@ name: app
 
 provides:
     default:
-        port: 4000
+        port: 5000
         protocol: http
-
-resources:
-    memory:
-        min: 128

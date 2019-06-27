@@ -10,7 +10,3 @@ provides:
 
 consumes:
     - service: app
-
-resources:
-    memory:
-        min: 100
