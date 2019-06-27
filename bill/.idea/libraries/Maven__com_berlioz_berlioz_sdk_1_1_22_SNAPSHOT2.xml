@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.berlioz:berlioz-sdk:1.1.22-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/berlioz/berlioz-sdk/1.1.22-SNAPSHOT/berlioz-sdk-1.1.22-20190624.055545-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/berlioz/berlioz-sdk/1.1.22-SNAPSHOT/berlioz-sdk-1.1.22-20190624.055545-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/berlioz/berlioz-sdk/1.1.22-SNAPSHOT/berlioz-sdk-1.1.22-20190624.055545-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

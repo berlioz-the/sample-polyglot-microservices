@@ -1,12 +1,9 @@
 ---
 kind: service
 cluster: hello
-name: app
+name: bill
 
 provides:
     default:
-        port: 5000
+        port: 8080
         protocol: http
-
-consumes:
-    - service: bill 

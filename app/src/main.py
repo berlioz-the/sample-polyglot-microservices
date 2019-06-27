@@ -18,13 +18,18 @@ def index_handler():
 @app.route('/query')
 def query_handler():
     time.sleep(0.25)
-    payload = {
-        'message': 'Hello, my name is BILL microservice.'
+
+    result = {
+        'message': 'Hello, my name is APP microservice. I have received following payload from BILL microservice.'
     }
-    return json.dumps({
-        'message': 'Hello, my name is APP microservice. I have received following payload from BILL microservice.',
-        'payload': payload
-    })
+
+    try:
+        response  = berlioz.service('bill').request().get('/')
+        result['payload'] = response.text
+    except Exception as ex:
+        result['payload'] = str(ex)
+
+    return json.dumps(result)
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
