@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body class="container">
+
+<main>
+    <h1>Berlioz Sample</h1>
+    <h2>Polyglot Microservices</h2>
+    <h3>Source: <a href="https://github.com/berlioz-the/sample-polyglot-microservices" target="_blank">https://github.com/berlioz-the/sample-polyglot-microservices</a></h3>
+
+    <div class="row">
+        <div class="col-sm">
+            In the following sample &quot;web&quot; calls &quot;app&quot;, and &quot;app&quot; calls &quot;bill&quot;. 
+            <br/>
+            The &quot;web&quot; is implemented in node.js, 
+            the &quot;app&quot; is implemented in python and
+            the &quot;bill&quot; is implemented in Java.
+            <br/>
+            You can open Jaeger to see the distributed traces.
+            <br/><br/>
+            If you think this is not cool - you are not a real engineer!
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+
+            <div class="card <%= cardClass %>">
+                <div class="card-header">
+                    Response from &quot;app&quot; microservice.
+                </div>
+                <div class="card-body">
+                    <h4><%= result.message %></h4><br/>
+                    Payload:
+                    <pre>
+<%= JSON.stringify(result.payload, null, 2) %>
+                    </pre>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <% include ../partials/global-error %>
+</main>
+
+<footer>
+    <p class="text-center text-muted">© Copyright 2019 Berlioz</p>
+</footer>
+
+</body>
+</html>
