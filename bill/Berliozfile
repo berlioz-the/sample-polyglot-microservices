@@ -2,8 +2,8 @@
 kind: service
 cluster: hello
 name: bill
-
-provides:
+  
+provides:  
     default:
         port: 8080
         protocol: http
