@@ -10,7 +10,7 @@ RUN mvn -B -s /usr/share/maven/ref/settings-docker.xml package
 
 ###############################################################################
 # Step 2 : Runner image
-FROM openjdk:11-jdk-slim
+FROM openjdk:8-jre-alpine
 COPY --from=build /usr/src/app/target/*.jar /usr/app/
 EXPOSE 8080
 ENTRYPOINT ["java", "-XshowSettings:vm", "-jar","/usr/app/application.jar"]
